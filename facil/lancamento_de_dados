@@ -9,47 +9,28 @@ Then compare this value with all others and return the number(s) with the highes
 */
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main(){
 
-    int n, maior=0, num;
-    string saida="";
+    int n, maior=0;
     cin >> n;
-    int resultado[n]={};
-    int ocorrencia[12]={};
+
+    int freq[12]={};
 
     for(int i=0; i<n; i++){
-        cin >> resultado[i];
-    }
-
-    for(int i=0; i<n; i++){
-        if(resultado[i]!=0){
-            num=resultado[i];
-            ocorrencia[num-1]++;
-        }
-        else{
-            continue;
-        }
-        for(int x=(i+1); x<n; x++){
-            if(resultado[x]==num){
-                ocorrencia[num-1]++;
-                resultado[x]=0;
-            }
-        }
-        if(ocorrencia[num-1]>maior){
-            maior=ocorrencia[num-1];
+        int num;
+        cin >> num;
+        freq[num-1]++;
+        if(freq[num-1]>maior){
+            maior=freq[num-1];
         }
     }
 
     for(int i=0; i<12; i++){
-        if(ocorrencia[i]==maior){
-            saida += std::to_string(i+1) + " ";
+        if(freq[i]==maior){
+            cout << i+1 << " ";
         }
     }
-
-    cout << saida;
-
 }
