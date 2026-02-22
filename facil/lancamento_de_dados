@@ -4,8 +4,8 @@ Source: https://neps.academy/exercise/188
 Difficulty: Easy
 
 Idea:
-Count how many times each number appears and keep track of the maximum frequency.
-Then compare this value with all others and return the number(s) with the highest frequency.
+Count the frequency of each dice value.
+Track the maximum frequency and output all values that match it.
 */
 
 #include <iostream>
