@@ -1,0 +1,55 @@
+/*
+Problem: Lançamento de dados / Dice Throws
+Source: https://neps.academy/exercise/188
+Difficulty: Easy
+
+Idea:
+Count how many times each number appears and keep track of the maximum frequency.
+Then compare this value with all others and return the number(s) with the highest frequency.
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int n, maior=0, num;
+    string saida="";
+    cin >> n;
+    int resultado[n]={};
+    int ocorrencia[12]={};
+
+    for(int i=0; i<n; i++){
+        cin >> resultado[i];
+    }
+
+    for(int i=0; i<n; i++){
+        if(resultado[i]!=0){
+            num=resultado[i];
+            ocorrencia[num-1]++;
+        }
+        else{
+            continue;
+        }
+        for(int x=(i+1); x<n; x++){
+            if(resultado[x]==num){
+                ocorrencia[num-1]++;
+                resultado[x]=0;
+            }
+        }
+        if(ocorrencia[num-1]>maior){
+            maior=ocorrencia[num-1];
+        }
+    }
+
+    for(int i=0; i<12; i++){
+        if(ocorrencia[i]==maior){
+            saida += std::to_string(i+1) + " ";
+        }
+    }
+
+    cout << saida;
+
+}
