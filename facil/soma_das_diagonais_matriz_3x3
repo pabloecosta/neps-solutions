@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    int M[3][3];
+    int diagonal1=0, diagonal2=0;
+
+    for(int i=0; i<3; i++){
+        for(int y=0; y<3; y++){
+            cin >> M[i][y];
+            if(i==y){
+                diagonal1+=M[i][y];
+                if(i+y==2){
+                    diagonal2+=M[i][y];
+                }
+            }
+            else if((i+y)==2){
+                diagonal2+=M[i][y];
+            }
+            }
+        }
+
+    cout << "Diagonal principal: " << diagonal1 << endl;
+    cout << "Diagonal secundaria: " << diagonal2 << endl;
+}
