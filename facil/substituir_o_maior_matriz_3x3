@@ -1,11 +1,12 @@
 /*
+Problem: Replace the Maximum Element in a 3x3 Matrix 
+Source: https://neps.academy/br/exercise/202
+Difficulty: Easy
 
-
-
-
-
-
-
+Idea:
+Read the 3x3 matrix.
+Find the maximum element.
+Print the matrix replacing the maximum element with -1.
 */
 
 #include <iostream>
