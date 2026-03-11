@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int fibonacci(int n){
+        int a=1, b=1, saida;
+
+        if(n<2){
+            return 1;
+        }
+        else{
+            for(int i=1;i<n;i++){
+                saida = a+b;
+                a = b;
+                b = saida;
+            }
+            return saida;
+        }
+    }
+
+int main(){
+
+    int n;
+    cin >> n;
+    cout << fibonacci(n);
+
+}
