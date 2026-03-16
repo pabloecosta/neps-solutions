@@ -1,4 +1,11 @@
+/*
+Problem: Soma das Linhas de Matriz 3x3 / Row Sums of a 3×3 Matrix
+Source: https://neps.academy/br/exercise/199
+Difficulty: Easy
 
+Idea:
+While reading the matrix, accumulate the sum of each row and print the results.
+*/
 #include <iostream>
 
 using namespace std;
