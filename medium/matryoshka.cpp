@@ -1,4 +1,12 @@
+/*
+Problem: Matryoshka
+Source: https://neps.academy/exercise/246
+Difficulty: Medium
 
+Idea: Compare if each doll is in the right order using an auxiliary vector and
+if it is not, keep the height of the doll.
+At the end, return all doll sizes that were in the wrong order.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
