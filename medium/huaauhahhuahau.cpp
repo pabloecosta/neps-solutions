@@ -1,4 +1,11 @@
+/*
+Problem: Huaauhahhuahau
+Source: https://neps.academy/exercise/118
+Difficulty: Medium
 
+Idea: Check whether the sequence of vowels in
+the given string forms a palindrome.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
