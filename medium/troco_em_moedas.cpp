@@ -1,3 +1,12 @@
+/*
+Problem: Troco em Moedas / Currency Change
+Source: https://neps.academy/br/exercise/143
+Difficulty: Medium
+
+Idea: Compute how many coins of each type are needed to
+represent the given amount using the minimum number
+of coins.
+*/
 
 
 #include <bits/stdc++.h>
