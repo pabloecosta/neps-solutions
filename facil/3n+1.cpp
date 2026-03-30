@@ -1,4 +1,12 @@
+/*
+Problem: O problema 3n+1 / 3n+1 Problem
+Source: https://neps.academy/br/exercise/259
+Difficulty: Easy
 
+Idea:
+Given an integer n, compute how many times it is needed to
+apply the Collatz Conjecture until n becomes 1.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
