@@ -1,4 +1,10 @@
+/*
+Problem: Estratégia Gulosa / Greedy Strategy
+Source: https://neps.academy/br/exercise/244
+Difficulty: Easy
 
+Idea: Given a value v, find the minimum amount of coins needed to represent it.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
