@@ -3,7 +3,7 @@ Problem: Toupeira
 Source: https://neps.academy/br/exercise/2323
 Difficulty: Medium
 
-Idea: For each walk suggestion
+Idea: For each walk suggestion, check whether is possible to complete this walk or not. 
 */
 
 #include <bits/stdc++.h>
