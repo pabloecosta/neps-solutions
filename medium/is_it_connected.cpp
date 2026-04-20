@@ -1,3 +1,8 @@
+/*
+Problem: Tá ligado? / Is it connected?
+Source: https://neps.academy/exercise/289
+Difficulty: Medium
+*/
 
 
 #include <bits/stdc++.h>
