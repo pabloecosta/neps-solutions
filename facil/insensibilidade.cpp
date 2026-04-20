@@ -1,4 +1,8 @@
-
+/*
+Problem: Insensibilidade / Insensitivity
+Source: https://neps.academy/exercise/316
+Difficulty: Easy
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
