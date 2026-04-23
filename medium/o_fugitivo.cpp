@@ -3,7 +3,7 @@ Problem: O Fugitivo
 Source: https://neps.academy/br/exercise/557
 Difficulty: Medium
 
-Idea: 
+Idea: For each step, update the position and verify if it exceeds the maximum distance.
 */
 
 #include <bits/stdc++.h>
